@@ -1,0 +1,39 @@
+.eb-shape-divider {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	line-height: 0;
+	direction: ltr;
+}
+.eb-shape-divider-top {
+	top: -1px;
+}
+.eb-shape-divider-top:not([data-negative="false"]) svg {
+	z-index: -1;
+}
+.eb-shape-divider-bottom {
+	/* z-index: -1; */
+	bottom: -1px;
+}
+.eb-shape-divider-bottom:not([data-negative="false"]) svg {
+	z-index: -1;
+}
+.eb-shape-divider[data-negative="false"].eb-shape-divider-bottom {
+	transform: rotate(180deg);
+}
+.eb-shape-divider[data-negative="true"].eb-shape-divider-top {
+	transform: rotate(180deg);
+}
+.eb-shape-divider svg {
+	display: block;
+	width: calc(100% + 1.3px);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.eb-shape-divider .eb-shape-divider-fill {
+	/* fill: #a520fe; */
+	transform-origin: center;
+	transform: rotateY(0deg);
+}

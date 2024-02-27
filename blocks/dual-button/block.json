@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Dual Button",
+  "apiVersion": 2,
+  "name": "essential-blocks/dual-button",
+  "category": "essential-blocks",
+  "description": "Create two buttons to be stacked together",
+  "textdomain": "essential-blocks",
+  "editorScript": "essential-blocks-editor-script"
+}

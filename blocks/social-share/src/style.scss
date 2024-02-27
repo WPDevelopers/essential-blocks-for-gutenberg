@@ -1,0 +1,83 @@
+/* Add Scl Profile Original Icon Styles */
+$twitter: #00aced;
+$facebook: #3b5998;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$tumblr: #32506d;
+$vk: #45668e;
+$whatsapp: #4dc247;
+$reddit: #ff4500;
+$stack-overflow: #ffa500;
+$envelope: #319324;
+$telegram: #2ca5e0;
+$pocket: #ef4056;
+$xing: #026466;
+
+.eb-social-share-wrapper ul.eb-social-shares li {
+	a {
+		background: #000;
+		color: #fff;
+	}
+
+	.facebook-f-original {
+		background: $facebook;
+	}
+
+	.facebook-original {
+		background: $facebook;
+	}
+
+	.twitter-original,
+	.twitter-square-original {
+		background: $twitter;
+	}
+
+	.pinterest-original {
+		background: $pinterest;
+	}
+
+	.linkedin-in-original {
+		background: $linkedin;
+	}
+
+	.linkedin-original {
+		background: $linkedin;
+	}
+
+	.tumblr-original {
+		background: $tumblr;
+	}
+
+	.vk-original {
+		background: $vk;
+	}
+
+	.reddit-original {
+		background: $reddit;
+	}
+
+	.envelope-original {
+		background: $envelope;
+	}
+
+	.telegram-original {
+		background: $telegram;
+	}
+
+	.get-pocket-original {
+		background: $pocket;
+	}
+
+	.xing-square-original,
+	.xing-original {
+		background: $xing;
+	}
+
+	.whatsapp-original {
+		background: $whatsapp;
+	}
+}
+
+.social-icon {
+	font-style: normal;
+}

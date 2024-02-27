@@ -1,0 +1,12 @@
+{
+  "title": "WPForms",
+  "name": "essential-blocks/wpforms",
+  "category": "essential-blocks",
+  "description": "Design stunning WPForms in minutes with plenty of controls & styling options",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

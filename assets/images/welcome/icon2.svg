@@ -1,0 +1,24 @@
+<svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.05" x="18" y="18.001" width="48" height="48" rx="24" fill="url(#paint0_linear_147_1127)"/>
+<g clipPath="url(#clip0_147_1127)">
+<path d="M30 35.3343V32.6676H47.3333V35.3343" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39.333 32.6677V51.3344" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M42.0003 51.3342H36.667" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46 43.3343V42.001H54V43.3343" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50 42.001V51.3343" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48.667 51.3342H51.3337" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M14.0036 24.5117L14.003 21.0117C14.0027 19.1552 14.74 17.3746 16.0525 16.0617C17.3651 14.7487 19.1454 14.0109 21.002 14.0106L28.002 14.0096" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.0088 59.5117L14.0093 63.0117C14.0096 64.8682 14.7474 66.6486 16.0603 67.9612C17.3733 69.2737 19.1539 70.0109 21.0104 70.0106L28.0104 70.0096" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.002 14.0054L63.002 14.0043C64.8585 14.004 66.6391 14.7412 67.952 16.0538C69.265 17.3664 70.0027 19.1467 70.003 21.0032L70.0036 24.5032" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.0104 70.0054L63.0104 70.0043C64.8669 70.004 66.6473 69.2662 67.9598 67.9533C69.2724 66.6403 70.0096 64.8597 70.0093 63.0032L70.0088 59.5032" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_147_1127" x1="49.5" y1="25.501" x2="18" y2="66.001" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<clipPath id="clip0_147_1127">
+<rect width="32" height="32" fill="white" transform="translate(26 26.001)"/>
+</clipPath>
+</defs>
+</svg>

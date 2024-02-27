@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Price",
+  "name": "essential-blocks/price",
+  "category": "essential-blocks",
+  "description": "Price Block lets you add both the regular price and a discounted price for your pricing package.",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "parent": ["essential-blocks/pro-pricing-cell"],
+  "supports": {
+    "anchor": true
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

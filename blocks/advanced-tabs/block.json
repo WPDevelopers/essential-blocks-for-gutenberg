@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Advanced Tabs",
+  "apiVersion": 2,
+  "name": "essential-blocks/advanced-tabs",
+  "description": "Display nested tabs to display key information on an instance in an interactive manner.",
+  "category": "essential-blocks",
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

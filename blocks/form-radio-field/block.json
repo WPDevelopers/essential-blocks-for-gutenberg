@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Radio Field",
+  "apiVersion": 2,
+  "name": "essential-blocks/form-radio-field",
+  "description": "Form Block Radio Field",
+  "category": "essential-blocks",
+  "textdomain": "essential-blocks",
+  "ancestor": [ "essential-blocks/form" ],
+  "supports": {
+    "align": [
+      "full"
+    ]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

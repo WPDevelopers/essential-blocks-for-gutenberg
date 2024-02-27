@@ -1,0 +1,42 @@
+.eb-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.eb-button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.eb-button a.eb-button-anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  color: #ffffff;
+  background-color: #7967ff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: inherit;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.eb-button a.eb-button-anchor:hover {
+  background-color: #513fd4;
+  color: #ffffff;
+}
+
+.eb-button-link {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.eb-button-text {
+  display: inline-block;
+}

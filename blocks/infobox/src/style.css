@@ -1,0 +1,61 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+a.info-click-link.info-wrap-link,
+a.info-click-link.info-wrap-link:hover,
+a.info-click-link.info-wrap-link:focus {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div.eb-infobox-wrapper {
+  overflow: hidden;
+}
+
+div.eb-infobox-wrapper .infobox-wrapper-inner {
+  display: flex;
+  position: relative;
+}
+
+div.eb-infobox-wrapper .infobox-wrapper-inner .icon-img-wrapper {
+  max-width: 100%;
+}
+
+div.eb-infobox-wrapper .infobox-wrapper-inner img {
+  max-width: 100%;
+  object-fit: cover;
+  display: inline-block;
+}
+
+div.eb-infobox-wrapper .icon-img-wrapper {
+  overflow: hidden;
+}
+
+div.eb-infobox-wrapper .eb-infobox-image-wrapper {
+  overflow: hidden;
+  display: flex;
+}
+
+div.eb-infobox-wrapper .title,
+div.eb-infobox-wrapper .subtitle,
+div.eb-infobox-wrapper .description {
+  margin: 0;
+  padding: 10px 0;
+}
+
+div.eb-infobox-wrapper a {
+  text-decoration: none;
+}
+
+div.eb-infobox-wrapper .contents-wrapper .infobox-btn:hover:before {
+  opacity: 1;
+}
+
+div.eb-infobox-wrapper .contents-wrapper .infobox-btn {
+  display: inline-block;
+}

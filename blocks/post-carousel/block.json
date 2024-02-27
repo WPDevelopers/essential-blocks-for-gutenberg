@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Post Carousel",
+  "name": "essential-blocks/post-carousel",
+  "description": "Showcase your posts & blogs in a stylish way on your website and make it more engaging",
+  "category": "essential-blocks",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

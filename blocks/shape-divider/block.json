@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Shape Divider",
+  "name": "essential-blocks/shape-divider",
+  "description": "Make your website designs stand out by showcasing different sections with stunning shape dividers",
+  "category": "essential-blocks",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "editorScript": "essential-blocks-editor-script"
+}

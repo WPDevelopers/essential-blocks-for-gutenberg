@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Fluent Forms",
+  "name": "essential-blocks/fluent-forms",
+  "category": "essential-blocks",
+  "description": "Design your Forms container, fields and choose preferred form layout to style Fluent Forms",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

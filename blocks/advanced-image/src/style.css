@@ -1,0 +1,157 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+.eb-advanced-image-wrapper {
+  margin: 0;
+  /* Zoom In #2 */
+}
+
+.eb-advanced-image-wrapper.img-style-triangle .image-wrapper {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.eb-advanced-image-wrapper.img-style-rhombus .image-wrapper {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.eb-advanced-image-wrapper.img-style-octagon .image-wrapper {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.eb-advanced-image-wrapper.caption-style-1 {
+  overflow: visible;
+}
+
+.eb-advanced-image-wrapper.caption-style-1.caption-horizontal-left.caption-vertical-top figcaption {
+  left: 0px;
+  top: 0px;
+  bottom: auto;
+}
+
+.eb-advanced-image-wrapper.caption-style-1.caption-horizontal-left.caption-vertical-middle figcaption {
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.eb-advanced-image-wrapper.caption-style-1.caption-horizontal-left.caption-vertical-bottom figcaption {
+  left: 0px;
+  bottom: 0px;
+}
+
+.eb-advanced-image-wrapper.caption-style-1.caption-horizontal-center.caption-vertical-top figcaption {
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  bottom: auto;
+}
+
+.eb-advanced-image-wrapper.caption-style-1.caption-horizontal-center.caption-vertical-middle figcaption {
+  left: 50%;
+  top: 50%;
+  bottom: auto !important;
+  transform: translate(-50%, -50%);
+}
+
+.eb-advanced-image-wrapper.caption-style-1.caption-horizontal-center.caption-vertical-bottom figcaption {
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+
+.eb-advanced-image-wrapper.caption-style-1.caption-horizontal-right.caption-vertical-top figcaption {
+  right: 0px;
+  top: 0px;
+  bottom: auto;
+}
+
+.eb-advanced-image-wrapper.caption-style-1.caption-horizontal-right.caption-vertical-middle figcaption {
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.eb-advanced-image-wrapper.caption-style-1.caption-horizontal-right.caption-vertical-bottom figcaption {
+  right: 0px;
+  bottom: 0px;
+}
+
+.eb-advanced-image-wrapper.caption-style-1 figcaption {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+}
+
+.eb-advanced-image-wrapper.caption-style-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.eb-advanced-image-wrapper.caption-style-2.top {
+  flex-direction: column-reverse;
+}
+
+.eb-advanced-image-wrapper .image-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.eb-advanced-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 !important;
+}
+
+.eb-advanced-image-wrapper figcaption {
+  line-height: 1;
+}
+
+.eb-advanced-image-wrapper.zoom-in img {
+  transform: scale(1);
+}
+
+.eb-advanced-image-wrapper.zoom-in .image-wrapper:hover img {
+  transform: scale(1.3);
+}
+
+.eb-advanced-image-wrapper.zoom-out img {
+  transform: scale(1.5);
+}
+
+.eb-advanced-image-wrapper.zoom-out .image-wrapper:hover img {
+  transform: scale(1);
+}
+
+.eb-advanced-image-wrapper.slide img {
+  margin-left: 30px !important;
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out !important;
+}
+
+.eb-advanced-image-wrapper.slide .image-wrapper:hover img {
+  margin-left: 0 !important;
+}
+
+.eb-advanced-image-wrapper.blur img {
+  filter: blur(3px);
+}
+
+.eb-advanced-image-wrapper.blur .image-wrapper:hover img {
+  filter: blur(0);
+}
+
+.eb-advanced-image-wrapper .eb-advimg-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}

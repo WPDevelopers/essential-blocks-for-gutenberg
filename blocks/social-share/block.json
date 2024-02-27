@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Social Share",
+  "name": "essential-blocks/social-share",
+  "category": "essential-blocks",
+  "description": "Share your posts & pages instantly on popular social platforms in one click from your website.",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

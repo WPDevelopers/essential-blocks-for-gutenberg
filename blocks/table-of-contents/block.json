@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Table Of Contents",
+  "name": "essential-blocks/table-of-contents",
+  "category": "essential-blocks",
+  "description": "Insert Table of Contents on your posts/pages and enhance user experience on your WordPress website",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

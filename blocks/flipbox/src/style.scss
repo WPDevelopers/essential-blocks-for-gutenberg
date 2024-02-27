@@ -1,0 +1,407 @@
+/* entire container, keeps perspective */
+.eb-flipbox-container * {
+	box-sizing: border-box;
+}
+
+.eb-flipbox-container {
+	perspective: 1000px;
+
+	.eb-flipbox-front-content,
+	.eb-flipbox-back-content {
+		font-size: 14px;
+	}
+
+	.eb-flipbox-front-title,
+	.eb-flipbox-back-title {
+		font-size: 24px;
+	}
+}
+
+/* flip speed goes here */
+.eb-flipper {
+	height: auto;
+	width: 100%;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.eb-flipbox-front,
+.eb-flipbox-back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.eb-flipbox-front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.eb-flipbox-back {
+	transform: rotateY(180deg);
+	z-index: 0;
+}
+
+/* icon wrapper style */
+.eb-flipbox-icon-wrapper {
+	display: flex;
+	align-items: center;
+
+	.eb-flipbox-icon-front,
+	.eb-flipbox-icon-back {
+		padding-bottom: 20px;
+	}
+
+	.dashicons {
+		width: unset;
+		height: unset;
+	}
+}
+
+/*
+	--------------------------
+	Flip hover animation types
+	--------------------------
+  */
+.eb-flipbox-container.eb-click-mode {
+	.flip-up {
+		transform: rotateX(180deg) !important;
+	}
+
+	.flip-bottom {
+		transform: rotateX(-180deg) !important;
+	}
+
+	.flip-left {
+		transform: rotateY(-180deg) !important;
+	}
+
+	.flip-right {
+		transform: rotateY(180deg) !important;
+	}
+
+	.zoom-in {
+		transform: scale(1.1) !important;
+	}
+
+	.zoom-in .eb-flipbox-back {
+		z-index: 5;
+		transform: none;
+	}
+
+	.zoom-out {
+		transform: scale(0.8) !important;
+	}
+
+	.zoom-out .eb-flipbox-back {
+		z-index: 5;
+		transform: none;
+	}
+}
+
+.eb-flipbox-container:not(.eb-click-mode) {
+	&:hover {
+		.flip-up {
+			transform: rotateX(180deg) !important;
+		}
+
+		.flip-bottom {
+			transform: rotateX(-180deg) !important;
+		}
+
+		.flip-left {
+			transform: rotateY(-180deg) !important;
+		}
+
+		.flip-right {
+			transform: rotateY(180deg) !important;
+		}
+
+		.zoom-in {
+			transform: scale(1.1) !important;
+		}
+
+		.zoom-in .eb-flipbox-back {
+			z-index: 5;
+			transform: none;
+		}
+
+		.zoom-out {
+			transform: scale(0.8) !important;
+		}
+
+		.zoom-out .eb-flipbox-back {
+			z-index: 5;
+			transform: none;
+		}
+	}
+}
+
+.eb-flipbox-upload-button {
+	height: 100px;
+	width: 100%;
+	background: #e3e3e3;
+	color: #666666;
+	display: inline-block;
+}
+
+.eb-flipbox-front-title,
+.eb-flipbox-back-title {
+	margin: 0 !important;
+}
+
+/*
+	------------------
+	Flipbox items style
+	--------------------
+  */
+.eb-flipbox-items-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 111;
+}
+
+.image-container {
+	padding: 5px;
+}
+
+.image-container img {
+	object-fit: cover;
+}
+
+/* flipbox icon style */
+
+.eb-flipbox-icon-front,
+.eb-flipbox-icon-back {
+	line-height: 1;
+}
+
+.eb-flipbox-button-link,
+.eb-flipbox-button-link:visited,
+.title-link,
+.title-link:visited {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.eb-flipbox-button-link {
+	line-height: inherit;
+}
+
+.eb-flipbox-button-link:hover {
+	color: #ffffff;
+}
+
+.eb-flipbox-button-container {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+}
+
+/* icon position before or after button */
+.before {
+	order: 1;
+}
+
+.after {
+	order: 0;
+}
+
+.eb-flipbox-button-icon {
+	margin: 5px;
+}
+
+/*
+	-------------
+	Button Styles
+	-------------
+  */
+
+.btn-gradient {
+	text-decoration: none;
+	color: white;
+	padding: 5px 10px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.21);
+	border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+	border-radius: 4px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Gradient - ugly css is ugly */
+.btn-gradient.cyan {
+	background: rgba(27, 188, 194, 1);
+	background: -webkit-gradient(linear,
+			0 0,
+			0 100%,
+			from(rgba(27, 188, 194, 1)),
+			to(rgba(24, 163, 168, 1)));
+	background: -webkit-linear-gradient(rgba(27, 188, 194, 1) 0%,
+			rgba(24, 163, 168, 1) 100%);
+	background: -moz-linear-gradient(rgba(27, 188, 194, 1) 0%,
+			rgba(24, 163, 168, 1) 100%);
+	background: -o-linear-gradient(rgba(27, 188, 194, 1) 0%,
+			rgba(24, 163, 168, 1) 100%);
+	background: linear-gradient(rgba(27, 188, 194, 1) 0%,
+			rgba(24, 163, 168, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1bbcc2', endColorstr='#18a3a8', GradientType=0);
+}
+
+.btn-gradient.red {
+	background: rgba(250, 90, 90, 1);
+	background: -webkit-gradient(linear,
+			0 0,
+			0 100%,
+			from(rgba(250, 90, 90, 1)),
+			to(rgba(232, 81, 81, 1)));
+	background: -webkit-linear-gradient(rgba(250, 90, 90, 1) 0%,
+			rgba(232, 81, 81, 1) 100%);
+	background: -moz-linear-gradient(rgba(250, 90, 90, 1) 0%,
+			rgba(232, 81, 81, 1) 100%);
+	background: -o-linear-gradient(rgba(250, 90, 90, 1) 0%,
+			rgba(232, 81, 81, 1) 100%);
+	background: linear-gradient(rgba(250, 90, 90, 1) 0%,
+			rgba(232, 81, 81, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa5a5a', endColorstr='#e85151', GradientType=0);
+}
+
+.btn-gradient.orange {
+	background: rgba(255, 105, 30, 1);
+	background: -webkit-gradient(linear,
+			0 0,
+			0 100%,
+			from(rgba(255, 105, 30, 1)),
+			to(rgba(230, 95, 28, 1)));
+	background: -webkit-linear-gradient(rgba(255, 105, 30, 1) 0%,
+			rgba(230, 95, 28, 1) 100%);
+	background: -moz-linear-gradient(rgba(255, 105, 30, 1) 0%,
+			rgba(230, 95, 28, 1) 100%);
+	background: -o-linear-gradient(rgba(255, 105, 30, 1) 0%,
+			rgba(230, 95, 28, 1) 100%);
+	background: linear-gradient(rgba(255, 105, 30, 1) 0%,
+			rgba(230, 95, 28, 1) 100%);
+}
+
+.btn-gradient.blue {
+	background: rgba(102, 152, 203, 1);
+	background: -moz-linear-gradient(top,
+			rgba(102, 152, 203, 1) 0%,
+			rgba(92, 138, 184, 1) 100%);
+	background: -webkit-gradient(left top,
+			left bottom,
+			color-stop(0%, rgba(102, 152, 203, 1)),
+			color-stop(100%, rgba(92, 138, 184, 1)));
+	background: -webkit-linear-gradient(top,
+			rgba(102, 152, 203, 1) 0%,
+			rgba(92, 138, 184, 1) 100%);
+	background: -o-linear-gradient(top,
+			rgba(102, 152, 203, 1) 0%,
+			rgba(92, 138, 184, 1) 100%);
+	background: -ms-linear-gradient(top,
+			rgba(102, 152, 203, 1) 0%,
+			rgba(92, 138, 184, 1) 100%);
+	background: linear-gradient(to bottom,
+			rgba(102, 152, 203, 1) 0%,
+			rgba(92, 138, 184, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6698cb', endColorstr='#5c8ab8', GradientType=0);
+}
+
+.btn-gradient.purple {
+	background: rgba(203, 153, 197, 1);
+	background: -moz-linear-gradient(top,
+			rgba(203, 153, 197, 1) 0%,
+			rgba(181, 134, 176, 1) 100%);
+	background: -webkit-gradient(left top,
+			left bottom,
+			color-stop(0%, rgba(203, 153, 197, 1)),
+			color-stop(100%, rgba(181, 134, 176, 1)));
+	background: -webkit-linear-gradient(top,
+			rgba(203, 153, 197, 1) 0%,
+			rgba(181, 134, 176, 1) 100%);
+	background: -o-linear-gradient(top,
+			rgba(203, 153, 197, 1) 0%,
+			rgba(181, 134, 176, 1) 100%);
+	background: -ms-linear-gradient(top,
+			rgba(203, 153, 197, 1) 0%,
+			rgba(181, 134, 176, 1) 100%);
+	background: linear-gradient(to bottom,
+			rgba(203, 153, 197, 1) 0%,
+			rgba(181, 134, 176, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb99c5', endColorstr='#b586b0', GradientType=0);
+}
+
+.btn-gradient.yellow {
+	background: rgba(240, 210, 100, 1);
+	background: -webkit-gradient(linear,
+			0 0,
+			0 100%,
+			from(rgba(240, 210, 100, 1)),
+			to(rgba(229, 201, 96, 1)));
+	background: -webkit-linear-gradient(rgba(240, 210, 100, 1) 0%,
+			rgba(229, 201, 96, 1) 100%);
+	background: -moz-linear-gradient(rgba(240, 210, 100, 1) 0%,
+			rgba(229, 201, 96, 1) 100%);
+	background: -o-linear-gradient(rgba(240, 210, 100, 1) 0%,
+			rgba(229, 201, 96, 1) 100%);
+	background: linear-gradient(rgba(240, 210, 100, 1) 0%,
+			rgba(229, 201, 96, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0d264', endColorstr='#e5c960', GradientType=0);
+}
+
+.btn-gradient.green {
+	background: rgba(130, 200, 160, 1);
+	background: -moz-linear-gradient(top,
+			rgba(130, 200, 160, 1) 0%,
+			rgba(130, 199, 158, 1) 100%);
+	background: -webkit-gradient(left top,
+			left bottom,
+			color-stop(0%, rgba(130, 200, 160, 1)),
+			color-stop(100%, rgba(130, 199, 158, 1)));
+	background: -webkit-linear-gradient(top,
+			rgba(130, 200, 160, 1) 0%,
+			rgba(130, 199, 158, 1) 100%);
+	background: -o-linear-gradient(top,
+			rgba(130, 200, 160, 1) 0%,
+			rgba(130, 199, 158, 1) 100%);
+	background: -ms-linear-gradient(top,
+			rgba(130, 200, 160, 1) 0%,
+			rgba(130, 199, 158, 1) 100%);
+	background: linear-gradient(to bottom,
+			rgba(130, 200, 160, 1) 0%,
+			rgba(124, 185, 149, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#82c8a0', endColorstr='#82c79e', GradientType=0);
+}
+
+.fade .eb-flipbox-front,
+.fade .eb-flipbox-back {
+	transition: opacity 0.6s;
+}
+
+.fade .eb-flipbox-back {
+	z-index: 1;
+	transform: none;
+}
+
+.fade:hover .eb-flipbox-front,
+.fade .eb-flipbox-back {
+	opacity: 0;
+}
+
+.fade:hover .eb-flipbox-back {
+	opacity: 1;
+}

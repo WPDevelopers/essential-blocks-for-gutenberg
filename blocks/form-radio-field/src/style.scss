@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.eb-radio-field-wrapper {
+	position: relative;
+
+	.eb-radio-inputarea {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		input {
+			width: auto;
+			margin: 0;
+		}
+		label {
+			margin: 0;
+		}
+	}
+
+	.eb-form-validation {
+		display: none;
+	}
+}

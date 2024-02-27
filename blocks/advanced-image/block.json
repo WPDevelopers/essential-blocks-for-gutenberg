@@ -1,0 +1,17 @@
+{
+  "title": "Advanced Image",
+  "name": "essential-blocks/advanced-image",
+  "category": "essential-blocks",
+  "description": "Customise images in Gutenberg to fit your exact needs.",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "anchor": true,
+    "color": {
+      "__experimentalDuotone": "img",
+      "text": false,
+      "background": false
+    }
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

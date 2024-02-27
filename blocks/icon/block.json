@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Icon Picker",
+  "name": "essential-blocks/icon",
+  "category": "essential-blocks",
+  "description": "Icon Picker Block lets you choose any Font Awesome icon to customize your design as per your preference.",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "anchor": true
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

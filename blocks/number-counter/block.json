@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Number Counter",
+  "apiVersion": 2,
+  "name": "essential-blocks/number-counter",
+  "category": "essential-blocks",
+  "description": "Put spotlight in important data using Counter block for Gutenberg. Customize the designs by adding proper Animation effects with flexibility and many more!",
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": [ "wide", "full" ]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

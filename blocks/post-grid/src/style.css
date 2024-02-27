@@ -1,0 +1,197 @@
+.eb-post-grid-wrapper {
+  z-index: 1;
+}
+
+.eb-post-grid-wrapper a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.eb-post-grid-wrapper .ebpg-grid-post-holder a.ebpg-post-link-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.eb-post-grid-wrapper .ebpg-entry-thumbnail {
+  position: relative;
+  line-height: 0;
+}
+
+.eb-post-grid-wrapper .ebpg-entry-thumbnail img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.eb-post-grid-wrapper .ebpg-entry-thumbnail:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.eb-post-grid-wrapper .ebpg-entry-thumbnail:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.eb-post-grid-wrapper .ebpg-entry-meta {
+  display: flex;
+  align-items: center;
+}
+
+.eb-post-grid-wrapper .ebpg-entry-meta .ebpg-entry-meta-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.eb-post-grid-wrapper .ebpg-author-avatar a {
+  display: block;
+}
+
+.eb-post-grid-wrapper .ebpg-author-avatar a img {
+  height: 50px;
+  width: 50px;
+  max-height: 50px;
+  max-width: 50px;
+  object-fit: cover;
+}
+
+.eb-post-grid-wrapper .ebpg-meta a {
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.eb-post-grid-wrapper .ebpg-read-time i {
+  margin-right: 5px;
+}
+
+.eb-post-grid-wrapper .ebpg-post-grid-column {
+  overflow: hidden;
+  z-index: 99;
+}
+
+.eb-post-grid-wrapper .ebpg-readmore-btn a {
+  display: inline-block;
+}
+
+.eb-post-grid-wrapper.style-4 .ebpg-grid-post-holder {
+  display: flex;
+  gap: 10px;
+}
+
+.eb-post-grid-wrapper.style-4 .ebpg-grid-post-holder .ebpg-entry-media {
+  width: 40%;
+}
+
+.eb-post-grid-wrapper.style-4 .ebpg-grid-post-holder .ebpg-entry-wrapper {
+  width: 60%;
+}
+
+.eb-post-grid-wrapper.style-5 .ebpg-grid-post-holder {
+  position: relative;
+}
+
+.eb-post-grid-wrapper.style-5 .ebpg-grid-post-holder .ebpg-entry-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.eb-post-grid-wrapper.style-5 .ebpg-grid-post-holder .ebpg-entry-wrapper .ebpg-entry-meta {
+  z-index: 999;
+  line-height: 1;
+}
+
+.eb-post-grid-wrapper.style-5 .ebpg-grid-post-holder .ebpg-entry-thumbnail:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.eb-post-grid-wrapper.style-5 .ebpg-grid-post-holder:hover .ebpg-entry-thumbnail:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.eb-post-grid-wrapper .ebpg-pagination {
+  grid-column: 1/-1;
+}
+
+.eb-post-grid-wrapper .ebpg-pagination button:disabled {
+  opacity: 0.5;
+  background-color: #e8e8e8;
+  color: #333;
+}
+
+.eb-post-grid-wrapper .ebpg-pagination button:disabled:hover {
+  cursor: unset;
+  background-color: #e8e8e8;
+  color: #333;
+}
+
+.eb-post-grid-wrapper .ebpg-pagination.prev-next-btn .ebpg-pagination-item,
+.eb-post-grid-wrapper .ebpg-pagination.prev-next-btn .ebpg-pagination-item-separator {
+  display: none !important;
+}
+
+.eb-post-grid-wrapper .ebpg-pagination .show {
+  display: inline-block;
+}
+
+.eb-post-grid-wrapper .ebpg-pagination .hide {
+  display: none;
+}
+
+.eb-post-grid-wrapper .ebpg-pagination .ebpg-pagination-item-separator {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.eb-post-grid-category-filter {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.eb-post-grid-category-filter .ebpg-category-filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.eb-post-grid-category-filter .ebpg-category-filter-list li {
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.eb-post-grid-category-filter .ebpg-category-filter-list li.active {
+  background-color: #d18df1;
+  color: #fff;
+}
+
+.eb-post-grid-category-filter .ebpg-category-filter-list li:hover {
+  cursor: pointer;
+  background-color: #d18df1;
+  color: #fff;
+}

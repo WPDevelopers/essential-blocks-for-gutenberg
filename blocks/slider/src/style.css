@@ -1,0 +1,90 @@
+.eb-slider-wrapper .slick-slide {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.eb-slider-wrapper .image .eb-slider-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.eb-slider-wrapper .content {
+  position: relative;
+}
+
+.eb-slider-wrapper .content .eb-slider-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.eb-slider-wrapper .content .eb-slider-item .eb-slider-button {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.eb-slider-wrapper .content .eb-slider-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-1 .eb-slider-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-1 .eb-slider-content.align-left .eb-slider-button,
+.eb-slider-wrapper .content .eb-slider-item.content-1 .eb-slider-content.align-justify .eb-slider-button {
+  align-self: flex-start;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-1 .eb-slider-content.align-center .eb-slider-button {
+  align-self: center;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-1 .eb-slider-content.align-right .eb-slider-button {
+  align-self: flex-end;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-3 {
+  display: flex !important;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-3 img {
+  width: 50%;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-3 .eb-slider-content {
+  padding: 0px 15px;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-4 {
+  display: flex !important;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-4 img {
+  width: 50%;
+}
+
+.eb-slider-wrapper .content .eb-slider-item.content-4 .eb-slider-content {
+  padding: 0px 15px;
+}
+
+.eb-slider-wrapper .slick-prev, .eb-slider-wrapper .slick-next {
+  z-index: 99;
+}
+
+.eb-slider-wrapper ul.slick-dots {
+  margin: 0;
+}

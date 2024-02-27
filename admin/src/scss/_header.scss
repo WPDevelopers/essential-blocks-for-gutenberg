@@ -1,0 +1,141 @@
+$eb-gap: 30px !default;
+$eb-text-color: #6a72a5 !default;
+
+.eb-header-block {
+	padding: 20px 30px;
+	display: flex;
+	align-items: center;
+
+	@media all and (max-width: 1024px) {
+		flex-wrap: wrap;
+	}
+
+	.eb-admin-logo-inline {
+		position: relative;
+		padding-right: 25px;
+		margin-right: 20px;
+
+		@media all and (max-width: 1024px) {
+			order: 0;
+			flex-basis: 44%;
+			padding-right: 3%;
+			margin-right: 3%;
+			text-align: right;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 1px;
+			height: 20px;
+			background-color: #82aeff;
+			transform: translateY(-50%);
+		}
+
+		img {
+			width: 38px;
+		}
+	}
+
+	.eb-header-nav {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		flex-wrap: wrap;
+		gap: 10px;
+
+		@media all and (max-width: 1024px) {
+			order: 2;
+			flex-basis: 100%;
+			justify-content: center;
+			border-top: 1px dashed #d6d8e4;
+			padding-top: 15px;
+			margin-top: 10px;
+		}
+
+		li {
+			margin: 0;
+			padding: 0;
+
+			&:first-child,
+			&:nth-child(3) {
+
+				a:hover,
+				a.eb-nav-active {
+					path {
+						stroke: #2673ff;
+						fill: transparent;
+					}
+				}
+			}
+		}
+
+		a {
+			align-items: center;
+			border-radius: 10px;
+			box-shadow: none;
+			box-sizing: border-box;
+			color: $eb-admin-text-color;
+			display: inline-flex;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 21px;
+			justify-content: center;
+			margin-bottom: 0;
+			margin-left: 0px;
+			margin-right: 0px;
+			min-height: 40px;
+			padding: 1px 17px;
+			text-align: center;
+			text-decoration: none;
+			text-transform: capitalize;
+			transition: all 0.15s ease-in-out;
+
+			&:hover,
+			&.eb-nav-active {
+				background: #eff4fc;
+				color: $eb-admin-theme-color;
+				cursor: pointer;
+
+				path {
+					// stroke: #2673ff;
+					fill: #2673ff;
+				}
+			}
+		}
+
+		svg {
+			margin-right: 8px;
+		}
+	}
+
+	// version
+
+	.eb-version {
+		margin-left: auto;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		color: $eb-text-color;
+		display: flex;
+		flex-flow: column;
+		text-align: right;
+		gap: 5px;
+
+		span {
+			background-color: #eff4fc;
+			color: #2673ff;
+			padding: 1px 5px;
+			margin-left: 3px;
+			border-radius: 3px;
+		}
+
+		@media all and (max-width: 1024px) {
+			order: 1;
+			flex-basis: 50%;
+		}
+	}
+}

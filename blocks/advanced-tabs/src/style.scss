@@ -1,0 +1,55 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.eb-advanced-tabs-wrapper {
+	.wp-block {
+		width: 100%;
+		max-width: 100%;
+
+		.block-editor-button-block-appender {
+			box-shadow: inset 0px -1px 0 1px #eeedf0;
+		}
+	}
+}
+
+.eb-tab-wrapper.force-display-none-from-js {
+	display: none;
+}
+
+.eb-tabs-contents {
+	.eb-tab-wrapper {
+		&.active {
+			opacity: 1;
+			height: auto;
+			visibility: visible;
+			z-index: 1111;
+		}
+
+		&.inactive {
+			opacity: 0;
+			height: 0;
+			width: 100%;
+			padding: 0 !important;
+			margin: 0 !important;
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+			overflow: hidden;
+			transition: none !important;
+		}
+	}
+}

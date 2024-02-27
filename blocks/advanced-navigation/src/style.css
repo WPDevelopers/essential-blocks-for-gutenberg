@@ -1,0 +1,145 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.eb-advanced-navigation-wrapper.preset-3 .wp-block-navigation__container
+> .wp-block-navigation-item
+> *:not(.wp-block-navigation__submenu-container) {
+  z-index: 1;
+}
+
+.eb-advanced-navigation-wrapper.preset-3 .wp-block-navigation__container
+> .wp-block-navigation-item.current-menu-item,
+.eb-advanced-navigation-wrapper.preset-3 .wp-block-navigation__container > .wp-block-navigation-item:hover {
+  position: relative;
+}
+
+.eb-advanced-navigation-wrapper.preset-3 .wp-block-navigation__container
+> .wp-block-navigation-item.current-menu-item::before,
+.eb-advanced-navigation-wrapper.preset-3 .wp-block-navigation__container > .wp-block-navigation-item:hover::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100%;
+  height: 70%;
+  z-index: 0;
+  transform: translateY(-50%);
+}
+
+.eb-advanced-navigation-wrapper.preset-4 .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__container
+> .wp-block-navigation-item:not(:last-child) {
+  position: relative;
+}
+
+.eb-advanced-navigation-wrapper.preset-4 .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__container
+> .wp-block-navigation-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 10px;
+  transform: translateY(-50%);
+}
+
+.eb-advanced-navigation-wrapper.preset-4 .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__submenu-container .wp-block-navigation-item {
+  border-bottom: 1px solid #e7f0ff;
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation {
+  box-shadow: 0px 22px 35px rgba(98, 103, 145, 0.15);
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation-item__content {
+  font-size: 14px;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation-item__content:hover {
+  text-decoration: none !important;
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation__submenu-container {
+  z-index: 99;
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation__submenu-container .wp-block-navigation-item:first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation__submenu-container .wp-block-navigation-item:last-child {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.eb-advanced-navigation-wrapper.is-vertical.items-justified-center .wp-block-navigation__container
+> .wp-block-navigation-item {
+  justify-content: center;
+}
+
+.eb-advanced-navigation-wrapper.is-vertical.items-justified-center .wp-block-navigation__container
+> .wp-block-navigation-item .wp-block-navigation__submenu-container {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.eb-advanced-navigation-wrapper.is-vertical.items-justified-right .wp-block-navigation__container
+> .wp-block-navigation-item {
+  justify-content: right;
+}
+
+.eb-advanced-navigation-wrapper.is-vertical.items-justified-left .wp-block-navigation__container
+> .wp-block-navigation-item {
+  justify-content: left;
+}
+
+.eb-advanced-navigation-wrapper.is-vertical.vertical-preset-2 .wp-block-navigation {
+  padding: 20px;
+}
+
+.eb-advanced-navigation-wrapper.is-vertical .wp-block-navigation__container {
+  width: 100%;
+}
+
+.eb-advanced-navigation-wrapper.is-vertical .wp-block-navigation__container > .wp-block-navigation-item {
+  width: -webkit-fill-available;
+}
+
+.eb-advanced-navigation-wrapper.remove-dropdown-icon .wp-block-navigation__submenu-icon {
+  display: none;
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation__toggle_button_label {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__container {
+  width: 100%;
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation__responsive-container-open {
+  opacity: 1;
+}
+
+.eb-advanced-navigation-wrapper.close-icon-left .wp-block-navigation__responsive-container-close {
+  left: 0;
+  right: auto;
+}
+
+.eb-advanced-navigation-wrapper.close-icon-center .wp-block-navigation__responsive-container-close {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+.eb-advanced-navigation-wrapper .wp-block-navigation__responsive-container:not(.is-menu-open.is-menu-open) {
+  border-radius: inherit;
+}

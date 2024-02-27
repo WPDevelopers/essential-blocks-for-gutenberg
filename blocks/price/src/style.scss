@@ -1,0 +1,26 @@
+.eb-price-wrapper {
+	&.eb-price-view-inline {
+		.eb-sale-price-wrapper,
+		.eb-original-price-wrapper {
+			display: inline-block !important;
+		}
+	}
+	.eb-price-container {
+		text-align: center;
+		color: #101828;
+		.eb-original-price-wrapper {
+			margin: 0;
+			&.eb-line-through {
+				color: #344054;
+				font-weight: 400;
+				.eb-original-price,
+				.eb-price-period {
+					text-decoration: line-through;
+				}
+			}
+		}
+		.eb-sale-price-wrapper {
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Row",
+  "name": "essential-blocks/row",
+  "category": "essential-blocks",
+  "description": "Create complex Row layouts with plenty of styling controls & responsive options",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["full"],
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

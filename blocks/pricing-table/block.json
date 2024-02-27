@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Pricing Table",
+  "name": "essential-blocks/pricing-table",
+  "description": "The pricing table block will let you create an effective product pricing table with perfect styling to get more sales from your prospective buyers.",
+  "category": "essential-blocks",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

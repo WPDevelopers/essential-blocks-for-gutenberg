@@ -1,0 +1,33 @@
+.eb-advance-heading-wrapper {
+	h1.eb-ah-title {
+		font-size: 36px;
+	}
+
+	h2.eb-ah-title {
+		font-size: 30px;
+	}
+
+	h3.eb-ah-title {
+		font-size: 24px;
+	}
+
+	h4.eb-ah-title {
+		font-size: 20px;
+	}
+
+	h5.eb-ah-title {
+		font-size: 18px;
+	}
+
+	h6.eb-ah-title {
+		font-size: 14px;
+	}
+
+	p.eb-ah-title {
+		font-size: 13px;
+	}
+
+	&>* {
+		transition: all 0.3s ease-in-out;
+	}
+}

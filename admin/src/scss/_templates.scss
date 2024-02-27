@@ -1,0 +1,175 @@
+.eb-templates-intro-block {
+	.temlately-logo {
+		width: 145px;
+		margin-bottom: 15px;
+	}
+
+	h2 {
+		margin: 0;
+		padding: 0;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 45px;
+		color: #211c70;
+
+		span {
+			background: linear-gradient(91deg, #f34f8c 50%, #ffb45a 40%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+		}
+	}
+
+	ul {
+		margin: 15px 0 0 0;
+
+		li {
+			margin-bottom: 6px;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			margin: 0 0 15px 0;
+
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 24px;
+			/* or 171% */
+
+			color: #211c70;
+
+			svg,
+			img {
+				width: 20px;
+			}
+		}
+	}
+
+	.eb-btn {
+		margin: 30px 0 0 30px;
+	}
+
+	.eb-admin-grid {
+		margin-bottom: 0;
+	}
+
+	.eb-admin-video-block {
+		@media all and (max-width: 767px) {
+			margin-top: 30px;
+		}
+	}
+}
+
+.templates-heading-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+
+	h3 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 31px;
+		color: #211c70;
+		margin: 0 !important;
+	}
+}
+.eb-templates-wrapper {
+	grid-template-columns: repeat(4, 1fr);
+
+	@media all and (max-width: 1024px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+.eb-templates-block {
+	background: #ffffff;
+	box-shadow: 0px 15px 25px -10px rgba(32, 31, 80, 0.15);
+	border-radius: 5px;
+	display: block;
+	text-align: left;
+	transition: all 0.15s ease-in-out;
+	position: relative;
+
+	@media all and (max-width: 767px) {
+		margin-top: 30px;
+	}
+
+	&:hover {
+		box-shadow: 0px 65px 75px -10px rgba(32, 31, 80, 0.25);
+	}
+
+	img {
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	h4 {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+		text-decoration: none;
+		display: block;
+		margin: 15px 15px 0;
+		word-break: break-word;
+		text-align: left;
+		color: #262234;
+	}
+
+	.label {
+		position: absolute;
+		top: 30px;
+		right: 0;
+		height: 29px;
+		padding: 0 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 50px;
+		transition: padding 0.3s ease-in-out 0s;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 1em;
+
+		&.starter {
+			background-color: #5453f4;
+		}
+		&.pro {
+			background-color: #fa7d8e;
+		}
+	}
+	.eb-templates-meta {
+		display: flex;
+		justify-content: left;
+		padding: 10px 15px 15px;
+		gap: 8px;
+		flex-wrap: wrap;
+
+		div {
+			padding: 6px 8px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid #d5ddec;
+			border-radius: 4px;
+			color: #262234;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 1em;
+
+			svg {
+				margin-right: 3px;
+			}
+		}
+
+		.template-download {
+			background-color: #e5eaf9;
+			color: #5453f4;
+		}
+	}
+}

@@ -1,0 +1,320 @@
+@keyframes "animateStripe" {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(35px, 0);
+  }
+}
+
+@keyframes "animateStripeRTL" {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-35px, 0);
+  }
+}
+
+@keyframes "animateRainbow" {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.eb-progressbar {
+  position: relative;
+}
+
+.eb-progressbar-wrapper * {
+  box-sizing: border-box;
+}
+
+.eb-progressbar-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.eb-progressbar-line {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 12px;
+  background-color: #eaeaea;
+}
+
+.eb-progressbar-line .eb-progressbar-count-wrap {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 5px);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.eb-progressbar-line-fill {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 12px;
+  background-color: #000;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.eb-progressbar-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.eb-progressbar-circle .eb-progressbar-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.eb-progressbar-circle .eb-progressbar-count-wrap {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.eb-progressbar-circle-shadow {
+  width: 220px;
+  height: 220px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.eb-progressbar-circle-pie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0 0 0 50%);
+}
+
+.eb-progressbar-circle-inner {
+  height: 100%;
+  width: 100%;
+  border-width: 12px;
+  border-style: solid;
+  border-color: #eee;
+  border-radius: 50%;
+}
+
+.eb-progressbar-circle-half {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-width: 12px;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 50%;
+  clip-path: inset(0 50% 0 0);
+}
+
+.eb-progressbar-circle-half-left {
+  transform: rotate(0deg);
+}
+
+.eb-progressbar-circle-half-right {
+  transform: rotate(180deg);
+  visibility: hidden;
+}
+
+.eb-progressbar-circle-inner-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.eb-progressbar-half-circle {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.eb-progressbar-half-circle .eb-progressbar-circle-pie {
+  clip-path: inset(0 0 50% 0);
+}
+
+.eb-progressbar-half-circle .eb-progressbar-circle-half {
+  clip-path: inset(50% 0 0 0);
+  transform: rotate(0deg);
+}
+
+.eb-progressbar-half-circle .eb-progressbar-circle-inner-content {
+  top: initial;
+  bottom: 0;
+  transform: translateY(0);
+}
+
+.eb-progressbar-half-circle .eb-progressbar-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.eb-progressbar-half-circle .eb-progressbar-count-wrap {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.eb-progressbar-half-circle-after {
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  clear: both;
+}
+
+.eb-progressbar-postfix-label {
+  float: right;
+}
+
+.eb-progressbar-line-stripe .eb-progressbar-line-fill:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: calc(100% + 70px);
+  height: 100%;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 35px 35px;
+}
+
+.eb-progressbar-line-animate .eb-progressbar-line-fill:after {
+  animation: animateStripe 2s linear infinite;
+}
+
+.eb-progressbar-line-animate-rtl .eb-progressbar-line-fill:after {
+  animation: animateStripeRTL 2s linear infinite;
+}
+
+.eb-progressbar-circle-wrap > div {
+  margin: 0 auto;
+}
+
+.eb-progressbar-line-container.left {
+  margin: 0 auto 0 0;
+}
+
+.eb-progressbar-circle-container.left > div {
+  margin: 0 auto 0 0;
+}
+
+.eb-progressbar-box-container.left > div {
+  margin: 0 auto 0 0;
+}
+
+.eb-progressbar-line-container.center {
+  margin: 0 auto;
+}
+
+.eb-progressbar-circle-container.center > div {
+  margin: 0 auto;
+}
+
+.eb-progressbar-box-container.center > div {
+  margin: 0 auto;
+}
+
+.eb-progressbar-line-container.right {
+  margin: 0 0 0 auto;
+}
+
+.eb-progressbar-circle-container.right > div {
+  margin: 0 0 0 auto;
+}
+
+.eb-progressbar-box-container.right > div {
+  margin: 0 0 0 auto;
+}
+
+.rtl .eb-progressbar-line-container {
+  text-align: right;
+}
+
+.rtl .eb-progressbar-line-container .eb-progressbar-count-wrap {
+  left: 0;
+  right: auto;
+}
+
+.rtl .eb-progressbar-line-container .eb-progressbar-line-fill {
+  left: auto;
+  right: 0;
+}
+
+.rtl .eb-progressbar.eb-progressbar-circle .eb-progressbar-circle-pie {
+  clip-path: inset(0 50% 0 0);
+}
+
+.rtl .eb-progressbar.eb-progressbar-circle .eb-progressbar-circle-half {
+  clip-path: inset(0 0 0 50%);
+}
+
+.rtl .eb-progressbar-circle-container .eb-progressbar-half-circle-after .eb-progressbar-prefix-label {
+  float: left;
+}
+
+.eb-progressbar-line-rainbow .eb-progressbar-line-fill {
+  background: linear-gradient(270deg, #9400d3, #4b0082, #0000ff, #00ff00, #ffff00, #ff7f00, #ff0000);
+  background-size: 500% 500%;
+  animation: animateRainbow 5s ease infinite;
+}
+
+.eb-progressbar-circle-fill .eb-progressbar-circle-half {
+  background-color: #000;
+}
+
+.eb-progressbar-half-circle-fill .eb-progressbar-circle-half {
+  background-color: #000;
+}
+
+.eb-progressbar-box {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #eee;
+  margin: 0 auto;
+}
+
+.eb-progressbar-box .eb-progressbar-box-inner-content {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 9;
+}
+
+.eb-progressbar-box .eb-progressbar-count-wrap {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.eb-progressbar-box .eb-progressbar-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.eb-progressbar-box-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: #000;
+}

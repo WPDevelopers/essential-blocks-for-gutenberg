@@ -1,0 +1,78 @@
+.eb-button-group {
+	&-wrapper {
+		position: relative;
+	}
+	&__midldeInner {
+		align-self: center;
+		width: 0;
+		position: relative;
+		span {
+			position: absolute;
+			background-color: #fff;
+			border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			z-index: 9999;
+		}
+	}
+}
+
+.eb-button-group {
+	transition: all 0.3s ease-in-out;
+
+	&-one,
+	&-two {
+		text-decoration: none;
+	}
+}
+
+// Typography style
+.eb-typography-base div {
+	display: flex;
+	justify-content: space-between;
+}
+
+// Normal, Hover inspector button styles
+.eb-inspector-btn-group {
+	display: flex;
+	padding-bottom: 5px;
+}
+.eb-inspector-btn-group button {
+	flex: 1;
+	padding-left: 40px !important;
+}
+
+//Styles for Preset Designs
+.eb-button-group-wrapper .eb-button-parent,
+.eb-button-group-wrapper .eb-button-parent:focus {
+	text-decoration: none !important;
+}
+.eb-button-group-wrapper .eb-button-parent .eb-button-text {
+	line-height: 1.8;
+}
+.eb-button-group-wrapper.preset-4 {
+	flex-direction: column !important;
+	
+	.eb-button-parent.eb-button-one {
+		margin-top: 0 !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.eb-button-parent.eb-button-two {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		margin-bottom: 0 !important;
+	}
+}
+.eb-button-group-wrapper:not(.preset-4) .eb-button-parent.eb-button-one {
+	margin-top: 0 !important;
+	margin-left: 0 !important;
+	margin-bottom: 0 !important;
+}
+.eb-button-group-wrapper:not(.preset-4) .eb-button-parent.eb-button-two {
+	margin-top: 0 !important;
+	margin-right: 0 !important;
+	margin-bottom: 0 !important;
+}

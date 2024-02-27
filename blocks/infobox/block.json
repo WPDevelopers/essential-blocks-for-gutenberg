@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Infobox",
+  "name": "essential-blocks/infobox",
+  "category": "essential-blocks",
+  "description": "Deliver your content beautifully to grab attention with an animated Infobox block.",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

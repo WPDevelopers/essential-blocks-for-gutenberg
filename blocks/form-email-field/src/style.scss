@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.eb-email-field-wrapper {
+	position: relative;
+
+	.eb-form-validation {
+		display: none;
+	}
+
+	.eb-field-input-wrap {
+		position: relative;
+
+		.eb-input-icon {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 14px;
+		}
+	}
+
+	.dashicons,
+	.dashicons-before:before {
+		width: unset;
+		height: unset;
+	}
+}

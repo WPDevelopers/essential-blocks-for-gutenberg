@@ -1,0 +1,261 @@
+/* entire container, keeps perspective */
+.eb-flipbox-container * {
+  box-sizing: border-box;
+}
+
+.eb-flipbox-container {
+  perspective: 1000px;
+}
+
+.eb-flipbox-container .eb-flipbox-front-content,
+.eb-flipbox-container .eb-flipbox-back-content {
+  font-size: 14px;
+}
+
+.eb-flipbox-container .eb-flipbox-front-title,
+.eb-flipbox-container .eb-flipbox-back-title {
+  font-size: 24px;
+}
+
+/* flip speed goes here */
+.eb-flipper {
+  height: auto;
+  width: 100%;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.eb-flipbox-front,
+.eb-flipbox-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.eb-flipbox-front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.eb-flipbox-back {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+/* icon wrapper style */
+.eb-flipbox-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.eb-flipbox-icon-wrapper .eb-flipbox-icon-front,
+.eb-flipbox-icon-wrapper .eb-flipbox-icon-back {
+  padding-bottom: 20px;
+}
+
+/* 
+	--------------------------
+	Flip hover animation types
+	--------------------------
+  */
+.eb-flipbox-container:hover .flip-up {
+  transform: rotateX(180deg) !important;
+}
+
+.eb-flipbox-container:hover .flip-bottom {
+  transform: rotateX(-180deg) !important;
+}
+
+.eb-flipbox-container:hover .flip-left {
+  transform: rotateY(-180deg) !important;
+}
+
+.eb-flipbox-container:hover .flip-right {
+  transform: rotateY(180deg) !important;
+}
+
+.eb-flipbox-container:hover .zoom-in {
+  transform: scale(1.1) !important;
+}
+
+.eb-flipbox-container:hover .zoom-in .eb-flipbox-back {
+  z-index: 5;
+  transform: none;
+}
+
+.eb-flipbox-container:hover .zoom-out {
+  transform: scale(0.8) !important;
+}
+
+.eb-flipbox-container:hover .zoom-out .eb-flipbox-back {
+  z-index: 5;
+  transform: none;
+}
+
+.eb-flipbox-upload-button {
+  height: 100px;
+  width: 100%;
+  background: #e3e3e3;
+  color: #666666;
+  display: inline-block;
+}
+
+.eb-flipbox-front-title,
+.eb-flipbox-back-title {
+  margin: 0 !important;
+}
+
+/* 
+	------------------
+	Flipbox items style 
+	--------------------
+  */
+.eb-flipbox-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 111;
+}
+
+.image-container {
+  padding: 5px;
+}
+
+.image-container img {
+  object-fit: cover;
+}
+
+/* flipbox icon style */
+.eb-flipbox-icon-front,
+.eb-flipbox-icon-back {
+  line-height: 1;
+}
+
+.eb-flipbox-button-link,
+.eb-flipbox-button-link:visited,
+.title-link,
+.title-link:visited {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eb-flipbox-button-link {
+  line-height: inherit;
+}
+
+.eb-flipbox-button-link:hover {
+  color: #ffffff;
+}
+
+.eb-flipbox-button-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* icon position before or after button */
+.before {
+  order: 1;
+}
+
+.after {
+  order: 0;
+}
+
+.eb-flipbox-button-icon {
+  margin: 5px;
+}
+
+/* 
+	-------------
+	Button Styles
+	-------------
+  */
+.btn-gradient {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  display: inline-block;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Gradient - ugly css is ugly */
+.btn-gradient.cyan {
+  background: #1bbcc2;
+  background: linear-gradient(#1bbcc2 0%, #18a3a8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1bbcc2', endColorstr='#18a3a8', GradientType=0);
+}
+
+.btn-gradient.red {
+  background: #fa5a5a;
+  background: linear-gradient(#fa5a5a 0%, #e85151 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa5a5a', endColorstr='#e85151', GradientType=0 );
+}
+
+.btn-gradient.orange {
+  background: #ff691e;
+  background: linear-gradient(#ff691e 0%, #e65f1c 100%);
+}
+
+.btn-gradient.blue {
+  background: #6698cb;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #6698cb), color-stop(100%, #5c8ab8));
+  background: linear-gradient(to bottom, #6698cb 0%, #5c8ab8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6698cb', endColorstr='#5c8ab8', GradientType=0 );
+}
+
+.btn-gradient.purple {
+  background: #cb99c5;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #cb99c5), color-stop(100%, #b586b0));
+  background: linear-gradient(to bottom, #cb99c5 0%, #b586b0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb99c5', endColorstr='#b586b0', GradientType=0 );
+}
+
+.btn-gradient.yellow {
+  background: #f0d264;
+  background: linear-gradient(#f0d264 0%, #e5c960 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0d264', endColorstr='#e5c960', GradientType=0 );
+}
+
+.btn-gradient.green {
+  background: #82c8a0;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #82c8a0), color-stop(100%, #82c79e));
+  background: linear-gradient(to bottom, #82c8a0 0%, #7cb995 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82c8a0', endColorstr='#82c79e', GradientType=0 );
+}
+
+.fade .eb-flipbox-front,
+.fade .eb-flipbox-back {
+  transition: opacity 0.6s;
+}
+
+.fade .eb-flipbox-back {
+  z-index: 1;
+  transform: none;
+}
+
+.fade:hover .eb-flipbox-front,
+.fade .eb-flipbox-back {
+  opacity: 0;
+}
+
+.fade:hover .eb-flipbox-back {
+  opacity: 1;
+}

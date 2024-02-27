@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Form",
+  "apiVersion": 2,
+  "name": "essential-blocks/form",
+  "description": "Create Beautiful and Professional Contact, Subscription or any other custom Forms easily with a few clicks.",
+  "category": "essential-blocks",
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

@@ -1,0 +1,34 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.eb-textarea-field-wrapper {
+	position: relative;
+
+	textarea {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.eb-form-validation {
+		display: none;
+	}
+
+	.eb-field-input-wrap {
+		position: relative;
+
+		.eb-input-icon {
+			position: absolute;
+			top: 50%;
+			// transform: translateY(-50%);
+			left: 14px;
+		}
+	}
+
+	.dashicons,
+	.dashicons-before:before {
+		width: unset;
+		height: unset;
+	}
+}

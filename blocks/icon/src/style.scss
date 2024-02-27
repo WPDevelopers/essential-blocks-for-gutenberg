@@ -1,0 +1,59 @@
+.eb-icon-wrapper {
+	.eb-icon-container {
+		// display: inline-flex;
+		// justify-content: center;
+		// align-items: center;
+		// width: 60px;
+		// height: 60px;
+
+		display: inline-block;
+		line-height: 1;
+		transition: all 0.3s;
+		color: #333333;
+		font-size: 50px;
+		text-align: center;
+
+		i {
+			width: 1em;
+			height: 1em;
+			position: relative;
+			display: block;
+
+			&:before {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+
+	&.eb-icon-shape-circle {
+		.eb-icon-container {
+			border-radius: 50%;
+		}
+	}
+
+	&.eb-icon-view-framed {
+		.eb-icon-container {
+			padding: 0.5em;
+			border: 3px solid #333333;
+			background-color: transparent;
+		}
+	}
+
+	&.eb-icon-view-stacked {
+		.eb-icon-container {
+			padding: 0.5em;
+			background-color: #333333;
+			color: #fff;
+			fill: #fff;
+		}
+	}
+
+	.dashicons,
+	.dashicons-before:before {
+		width: unset;
+		height: unset;
+		font-size: unset;
+	}
+}

@@ -1,0 +1,116 @@
+/* Add Scl Profile Original Icon Styles */
+.eb-social-links-wrapper ul.socials li a {
+  background: #000;
+  color: #fff;
+}
+
+.eb-social-links-wrapper ul.socials li .facebook-f-original {
+  background: #3b5998;
+}
+
+.eb-social-links-wrapper ul.socials li .twitter-original {
+  background: #00aced;
+}
+
+.eb-social-links-wrapper ul.socials li .google-plus-original {
+  background: #dd4b39;
+}
+
+.eb-social-links-wrapper ul.socials li .pinterest-original {
+  background: #cb2027;
+}
+
+.eb-social-links-wrapper ul.socials li .linkedin-in-original {
+  background: #007bb6;
+}
+
+.eb-social-links-wrapper ul.socials li .linkedin-original {
+  background: #007bb6;
+}
+
+.eb-social-links-wrapper ul.socials li .youtube-original {
+  background: #ff0000;
+}
+
+.eb-social-links-wrapper ul.socials li .vimeo-v-original {
+  background: #1ab7ea;
+}
+
+.eb-social-links-wrapper ul.socials li .tumblr-original {
+  background: #32506d;
+}
+
+.eb-social-links-wrapper ul.socials li .instagram-original {
+  background: #bc2a8d;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.eb-social-links-wrapper ul.socials li .flickr-original {
+  background: #ff0084;
+}
+
+.eb-social-links-wrapper ul.socials li .dribbble-original {
+  background: #ea4c89;
+}
+
+.eb-social-links-wrapper ul.socials li .quora-original {
+  background: #a82400;
+}
+
+.eb-social-links-wrapper ul.socials li .foursquare-original {
+  background: #0072b1;
+}
+
+.eb-social-links-wrapper ul.socials li .forrst-original {
+  background: #5b9a68;
+}
+
+.eb-social-links-wrapper ul.socials li .vk-original {
+  background: #45668e;
+}
+
+.eb-social-links-wrapper ul.socials li .wordpress-simple-original {
+  background: #21759b;
+}
+
+.eb-social-links-wrapper ul.socials li .yahoo-original {
+  background: #7b0099;
+}
+
+.eb-social-links-wrapper ul.socials li .soundcloud-original {
+  background: #ff3a00;
+}
+
+.eb-social-links-wrapper ul.socials li .skype-original {
+  background: #00aaf2;
+}
+
+.eb-social-links-wrapper ul.socials li .github-original {
+  background: #000000;
+  color: #ffffff;
+}
+
+.eb-social-links-wrapper ul.socials li .reddit-original {
+  background: #ff4500;
+}
+
+.eb-social-links-wrapper ul.socials li .stack-overflow-original {
+  background: #ffa500;
+}
+
+.eb-social-links-wrapper ul.socials li .stumbleupon-original {
+  background: #eb4823;
+}
+
+.eb-social-links-wrapper ul.socials li .blogger-b-original {
+  background: #fb8f3d;
+}
+
+.eb-social-links-wrapper ul.socials li .whatsapp-original {
+  background: #4dc247;
+}
+
+.social-icon {
+  font-style: normal;
+}

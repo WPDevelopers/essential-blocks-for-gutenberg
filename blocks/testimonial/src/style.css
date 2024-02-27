@@ -1,0 +1,84 @@
+.eb-testimonial-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.eb-testimonial-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  word-break: break-all;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.eb-avatar-container {
+  display: flex;
+}
+
+.eb-avatar-style {
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+}
+
+.eb-testimonial-quote-style {
+  background-position: "left";
+  background-repeat: "no-repeat";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.eb-description-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.eb-userinfo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.eb-testimonial-wrapper .eb-userinfo-container > * {
+  margin: 0 0 5px 0;
+}
+
+.eb-img-placeholder {
+  background-color: grey;
+}
+
+.eb-testimonial-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50% !important;
+  background: #e3e3e3 !important;
+  display: inline !important;
+}
+
+.eb-testimonial-background-upload {
+  height: 100px;
+  width: 100%;
+  background: #e3e3e3;
+  color: #666666;
+  display: inline-block;
+}
+
+.eb-typography-base div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Inspector Design */
+.components-base-control {
+  margin-bottom: 10px !important;
+}
+
+.components-base-control .components-base-control__label {
+  margin-bottom: 5px;
+  display: inline-block;
+}

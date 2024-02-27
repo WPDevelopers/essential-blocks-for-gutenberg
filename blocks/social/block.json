@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Social Icons",
+  "name": "essential-blocks/social",
+  "category": "essential-blocks",
+  "description": "Add icon links to your social media profiles and grow your audience with animated social icons",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

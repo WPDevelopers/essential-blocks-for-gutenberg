@@ -1,0 +1,189 @@
+# Copyright (C) 2021 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/eb\n"
+"POT-Creation-Date: 2021-12-08 11:01:49+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: includes/category.php:7 includes/essential-admin.php:43
+#: includes/essential-admin.php:44
+msgid "Essential Blocks"
+msgstr ""
+
+#: includes/essential-admin.php:312
+msgid "Accordion"
+msgstr ""
+
+#: includes/essential-admin.php:317
+msgid "Button"
+msgstr ""
+
+#: includes/essential-admin.php:322
+msgid "Call To Action"
+msgstr ""
+
+#: includes/essential-admin.php:327
+msgid "Countdown"
+msgstr ""
+
+#: includes/essential-admin.php:332
+msgid "Dual Button"
+msgstr ""
+
+#: includes/essential-admin.php:337
+msgid "Flipbox"
+msgstr ""
+
+#: includes/essential-admin.php:342
+msgid "Advanced Heading"
+msgstr ""
+
+#: includes/essential-admin.php:347
+msgid "Image Comparison"
+msgstr ""
+
+#: includes/essential-admin.php:352
+msgid "Image Gallery"
+msgstr ""
+
+#: includes/essential-admin.php:357
+msgid "Infobox"
+msgstr ""
+
+#: includes/essential-admin.php:362
+msgid "Instagram Feed"
+msgstr ""
+
+#: includes/essential-admin.php:367
+msgid "Interactive Promo"
+msgstr ""
+
+#: includes/essential-admin.php:372
+msgid "Notice"
+msgstr ""
+
+#: includes/essential-admin.php:377
+msgid "Parallax Slider"
+msgstr ""
+
+#: includes/essential-admin.php:382
+msgid "Pricing Table"
+msgstr ""
+
+#: includes/essential-admin.php:387
+msgid "Progress Bar"
+msgstr ""
+
+#: includes/essential-admin.php:392
+msgid "Slider"
+msgstr ""
+
+#: includes/essential-admin.php:397
+msgid "Social Icons"
+msgstr ""
+
+#: includes/essential-admin.php:402
+msgid "Team Member"
+msgstr ""
+
+#: includes/essential-admin.php:407
+msgid "Testimonial"
+msgstr ""
+
+#: includes/essential-admin.php:412
+msgid "Toggle Content"
+msgstr ""
+
+#: includes/essential-admin.php:417
+msgid "Typing Text"
+msgstr ""
+
+#: includes/essential-admin.php:422
+msgid "Wrapper"
+msgstr ""
+
+#: includes/essential-admin.php:427
+msgid "Number Counter"
+msgstr ""
+
+#: includes/essential-admin.php:432
+msgid "Post Grid"
+msgstr ""
+
+#: includes/essential-admin.php:437
+msgid "Feature List"
+msgstr ""
+
+#: includes/essential-admin.php:442
+msgid "Row"
+msgstr ""
+
+#: includes/essential-admin.php:447
+msgid "Table Of Contents"
+msgstr ""
+
+#: includes/menu-page-display.php:92
+msgid "<a href=\"%s\" target=\"_blank\">Explore Demos</a>"
+msgstr ""
+
+#: util/node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
+#: util/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/plugin-include.php:6
+msgid "Exclude"
+msgstr ""
+
+#: util/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/include/file.php:2
+msgid "Include"
+msgstr ""
+
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/add-domain.php:2
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:2
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:3
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:4
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:2
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:3
+msgid "String"
+msgstr ""
+
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:9
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:10
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:11
+msgid "1 Star"
+msgid_plural "%s Stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: util/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:7
+#. translators: A single line translators comment.
+msgid "A"
+msgstr ""
+
+#: util/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:15
+#. translators: A multiline translators comment.
+msgid "B"
+msgstr ""
+
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:6
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:7
+#: util/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:8
+msgctxt "a string"
+msgid "String"
+msgstr ""

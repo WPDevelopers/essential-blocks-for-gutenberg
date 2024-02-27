@@ -1,0 +1,12 @@
+{
+  "title": "Advanced Video",
+  "name": "essential-blocks/advanced-video",
+  "category": "essential-blocks",
+  "description": "Portray any attractive video content on your website and grow engagement",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "anchor": true
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

@@ -1,0 +1,211 @@
+.eb-intro-block {
+	h2 {
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 1.2em;
+
+		color: $eb-admin-title-color;
+		margin-bottom: 20px;
+	}
+}
+
+.eb-admin-video-block {
+	// margin-bottom: 30px;
+	height: 453px;
+
+	.react-player__preview {
+		border-radius: 5px;
+
+		img {
+			background: #ffffff;
+			border-radius: 50px;
+			width: 24px;
+			height: 24px;
+			padding: 20px;
+		}
+	}
+
+	iframe {
+		border-radius: 5px;
+	}
+}
+
+.changelog-block {
+	.changelog-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		// .changelogToogle {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 29px;
+		/* identical to box height */
+
+		color: $eb-admin-title-color;
+		cursor: pointer;
+
+		display: flex;
+		flex-direction: row;
+		// justify-content: space-between;
+		// align-items: center;
+
+		h5 {
+			font-size: 20px;
+			font-weight: 500;
+		}
+
+		.eb-btn-border {
+			background: #eff4fc;
+			padding: 5px;
+
+			// &:hover {
+
+			// }
+		}
+	}
+
+	.changelog-details {
+		transition: all 0.5s ease;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 20px;
+
+		.changelog-wrapper {
+			min-width: 350px;
+		}
+
+		.eb_all_changelog_btn {
+			width: 100%;
+			text-align: center;
+		}
+
+
+	}
+
+	.changelog-title {
+		color: #313131;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	.changelog-date {
+		margin-left: 10px;
+		background: #656363;
+		color: #fff;
+		padding: 2px 10px;
+		line-height: 1;
+		font-size: 14px;
+		border-radius: 3px;
+	}
+
+	.changelog-content {
+		list-style: disc;
+		margin-left: 15px;
+		color: #888;
+		font-size: 15px;
+		line-height: 26px;
+		font-weight: 400;
+		margin-top: 0;
+		margin-bottom: 30px;
+
+		li:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+}
+
+.eb-install-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.eb-install-loader {
+		height: 25px;
+		margin-right: 10px;
+	}
+}
+
+.pro-teaser-block {
+	gap: 20px;
+	// align-items: center;
+	position: relative;
+
+	.pro-teaser-icon {
+		width: 71px;
+		height: 71px;
+		background: #fffaeb;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 71px;
+	}
+
+	.pro-teaser-content {
+		width: 80%;
+	}
+
+	.pro-teaser-title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.5rem;
+		color: #211c70;
+		margin-bottom: 8px;
+	}
+
+	.pro-teaser-description {
+		line-height: 1.5rem;
+		color: #6a72a5;
+		font-weight: 400;
+		font-size: 16px;
+		margin-bottom: 20px;
+		padding-right: 20%;
+
+		@media all and (max-width: 767px) {
+			padding-right: 0;
+		}
+	}
+
+	.teaser-box {
+		display: flex;
+
+		@media all and (max-width: 767px) {
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		img {
+			max-width: 100%;
+			margin: 0;
+		}
+	}
+
+	.teaser-cta {
+		display: inline-grid;
+		position: absolute;
+		bottom: 38px;
+		right: 38px;
+
+		@media all and (max-width: 767px) {
+			position: relative;
+			right: 0;
+			bottom: 0;
+
+			img {
+				display: none;
+			}
+		}
+
+		img {
+			margin: 0 auto 30px 10px;
+		}
+	}
+}

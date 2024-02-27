@@ -1,0 +1,12 @@
+{
+  "title": "Openverse",
+  "name": "essential-blocks/openverse",
+  "category": "essential-blocks",
+  "description": "Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "anchor": true
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

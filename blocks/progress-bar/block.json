@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Progress Bar",
+  "name": "essential-blocks/progress-bar",
+  "category": "essential-blocks",
+  "description": "Make your website interactive with stunning progress bars.",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}

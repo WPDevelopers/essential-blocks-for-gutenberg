@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Column",
+  "name": "essential-blocks/column",
+  "description": "A single column within a Row block.",
+  "category": "essential-blocks",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "parent": ["essential-blocks/row"],
+  "supports": {
+    "inserter": false,
+    "reusable": false,
+    "html": false
+  }
+}

@@ -1,0 +1,57 @@
+.eb-dot-style-modern-1 .slick-dots li,
+.eb-dot-style-modern-2 .slick-dots li,
+.eb-dot-style-modern-3 .slick-dots li {
+	transition: all 0.2ms ease;
+}
+.eb-dot-style-modern-1 .slick-dots li,
+.eb-dot-style-modern-1 .slick-dots li button,
+.eb-dot-style-modern-1 .slick-dots li button::before {
+	width: 2px;
+}
+
+.eb-dot-style-modern-1 .slick-dots li button::before {
+	margin: 0;
+	padding: 0;
+}
+
+/* preset 2 */
+.eb-dot-style-modern-2 .slick-dots li,
+.eb-dot-style-modern-2 .slick-dots li button,
+.eb-dot-style-modern-2 .slick-dots li button::before {
+	width: 25px;
+	height: 2px;
+}
+
+.eb-dot-style-modern-2 .slick-dots li button::before {
+	margin: 0;
+	padding: 0;
+}
+
+/* preset 3 */
+.eb-dot-style-modern-3 .slick-dots li,
+.eb-dot-style-modern-3 .slick-dots li button,
+.eb-dot-style-modern-3 .slick-dots li button::before {
+	width: 15px;
+	height: 2px;
+}
+
+.eb-dot-style-modern-3 .slick-dots li {
+	margin: 0 5px !important;
+}
+.eb-dot-style-modern-3 .slick-dots li.slick-active {
+	margin-right: 20px !important;
+}
+.eb-dot-style-modern-3 .slick-dots li button::before {
+	margin: 0;
+	padding: 0;
+}
+.eb-dot-style-modern-3 .slick-dots li.slick-active button::before {
+	width: 25px;
+}
+
+.eb-dot-style-modern-1 .slick-dots li button::before,
+.eb-dot-style-modern-2 .slick-dots li button::before,
+.eb-dot-style-modern-3 .slick-dots li button::before {
+	font-size: 0 !important;
+	background: black;
+}

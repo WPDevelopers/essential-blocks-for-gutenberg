@@ -1,0 +1,67 @@
+/* Add Scl Profile Original Icon Styles */
+.eb-social-share-wrapper ul.eb-social-shares li a {
+  background: #000;
+  color: #fff;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .facebook-f-original {
+  background: #3b5998;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .facebook-original {
+  background: #3b5998;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .twitter-original,
+.eb-social-share-wrapper ul.eb-social-shares li .twitter-square-original {
+  background: #00aced;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .pinterest-original {
+  background: #cb2027;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .linkedin-in-original {
+  background: #007bb6;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .linkedin-original {
+  background: #007bb6;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .tumblr-original {
+  background: #32506d;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .vk-original {
+  background: #45668e;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .reddit-original {
+  background: #ff4500;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .envelope-original {
+  background: #319324;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .telegram-original {
+  background: #2ca5e0;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .get-pocket-original {
+  background: #ef4056;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .xing-square-original,
+.eb-social-share-wrapper ul.eb-social-shares li .xing-original {
+  background: #026466;
+}
+
+.eb-social-share-wrapper ul.eb-social-shares li .whatsapp-original {
+  background: #4dc247;
+}
+
+.social-icon {
+  font-style: normal;
+}

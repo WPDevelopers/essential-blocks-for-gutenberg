@@ -1,0 +1,292 @@
+.eb-instagram__gallery .instagram__gallery__item {
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .author__info {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .author__info .author__thumb {
+  height: 40px;
+  min-width: 40px;
+  flex: 0 0 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .author__info .author__thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .author__info .author__name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #222;
+  margin: 0;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .instagram__gallery__thumb {
+  font-size: 0;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .instagram__gallery__thumb img {
+  width: 100%;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .instagram__gallery__thumb .eb-instagram-caption {
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .instagram__gallery__thumb .eb-instagram-caption p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .eb-instagram-meta {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+}
+
+.eb-instagram__gallery .instagram__gallery__item .eb-instagram-meta span {
+  margin-right: 5px;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--content__inner:hover .instagram__gallery__thumb::before,
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--content__inner:hover .instagram__gallery__thumb .eb-instagram-caption {
+  opacity: 1;
+  z-index: 1;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--content__inner .instagram__gallery__thumb {
+  position: relative;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--content__inner .instagram__gallery__thumb::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--content__inner .instagram__gallery__thumb .eb-instagram-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 10px 20px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__simple:hover .instagram__gallery__thumb::before,
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__simple:hover .instagram__gallery__thumb::after {
+  opacity: 1;
+  z-index: 1;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__simple .author__info,
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__simple .instagram__gallery__thumb .eb-instagram-caption,
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__simple .eb-instagram-meta {
+  display: none;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__simple .instagram__gallery__thumb {
+  position: relative;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__simple .instagram__gallery__thumb::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__simple .instagram__gallery__thumb::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(../assets/images/instagram-icon-white.svg) no-repeat center center;
+  background-size: 30px 30px;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__basic {
+  position: relative;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__basic:hover .eb-instagram-meta,
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__basic:hover .instagram__gallery__thumb::before,
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__basic:hover .instagram__gallery__thumb .eb-instagram-caption {
+  opacity: 1;
+  z-index: 1;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__basic .author__info {
+  display: none;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__basic .instagram__gallery__thumb {
+  position: relative;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__basic .instagram__gallery__thumb::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__basic .instagram__gallery__thumb .eb-instagram-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__basic .eb-instagram-meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  color: #fff;
+  opacity: 0;
+  padding: 10px 20px;
+  transition: opacity 0.3s ease;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard {
+  position: relative;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard:hover .eb-instagram-meta,
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard:hover .instagram__gallery__thumb::before,
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard:hover .instagram__gallery__thumb .eb-instagram-caption {
+  opacity: 1;
+  z-index: 1;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard .author__info {
+  display: none;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard .instagram__gallery__thumb {
+  position: relative;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard .instagram__gallery__thumb::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard .instagram__gallery__thumb .eb-instagram-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard .eb-instagram-meta {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard .eb-instagram-meta span {
+  display: none;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.instagram__gallery__item--overlay__standard .eb-instagram-meta .like__count {
+  color: #fff;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.has__equal__height .thumb__wrap {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%;
+}
+
+.eb-instagram__gallery .instagram__gallery__item.has__equal__height .thumb__wrap img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.instagram__gallery__item.instagram__gallery__item--overlay__simple, .instagram__gallery__item.instagram__gallery__item--overlay__standard, .instagram__gallery__item.instagram__gallery__item--overlay__basic {
+  border: none;
+  padding: 0;
+}
+
+.instagram__gallery__item .author__info .author__name a {
+  margin: 0;
+  text-decoration: none;
+  color: #222;
+}
+
+.eb-instagram__gallery:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.instagram__gallery__col {
+  float: left;
+  margin: 10px;
+}
+
+.instagram__gallery__col:before {
+  display: block;
+}

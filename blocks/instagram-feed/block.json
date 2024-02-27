@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Instagram Feed",
+  "name": "essential-blocks/instagram-feed",
+  "category": "essential-blocks",
+  "description": "Showcase instagram posts for your web visitors.",
+  "apiVersion": 2,
+  "textdomain": "essential-blocks",
+  "supports": {
+    "align": ["wide", "full"]
+  },
+  "editorScript": "essential-blocks-editor-script"
+}
